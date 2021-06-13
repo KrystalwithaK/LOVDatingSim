@@ -313,7 +313,8 @@ screen navigation():
 
         textbutton _("Preferences") action ShowMenu("preferences")
         textbutton _("Gallery") action ShowMenu("gallery")
-        textbutton _("Characters") action ShowMenu("characters")
+        #textbutton _("Characters") action ShowMenu("characters")
+        textbutton _("Endings") action ShowMenu("endings")
 
         if _in_replay:
 
@@ -545,12 +546,13 @@ style return_button:
 ## There's nothing special about this screen, and hence it also serves as an
 ## example of how to make a custom screen.
 
-#screen endings():
+screen endings():
 
-    #tag menu
+    tag menu
     #use game_menu(_("Endings"), scroll="viewport"):
         #style_prefix "endings"
         # Build your screen here
+
 
 
 
