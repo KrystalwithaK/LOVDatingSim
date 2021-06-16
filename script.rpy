@@ -1,3 +1,8 @@
+﻿# The script of the game goes in this file.
+
+# Declare characters used by this game. The color argument colorizes the
+# name of the character.
+
 define t = Character("Tomura", color="#b1f2fc")
 define d = Character("Dabi", color = "#8826f7")
 define h = Character("Himiko", color = "#e33d4e")
@@ -40,14 +45,13 @@ label start:
 
 #if high enough affection you can get their quirk with a copying quirk?
 
-    "You wander into a dilapidated bar"
+    #"You wander into a dilapidated bar"
+    "The plain, wooden door squeaks loudly as Giran casually swings it open.
+    Thing probably hasn’t been oiled in years. The room he leads you into is a bar. It looks far cleaner than you expected."
     "It smells kind of bad..."
 
     show shigaraki1:
         xalign 0.8
-
-
-
 
 
     t "Do you have a quirk?"

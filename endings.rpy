@@ -1,3 +1,5 @@
+label endings:
+    call screen endings
 screen endings:
     tag menu
     add "black"
@@ -41,8 +43,6 @@ screen endings:
         action Return()
         xalign 0.5
         yalign 0.95
-
-
 
 
 label shigEndings:

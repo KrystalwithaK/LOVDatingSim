@@ -1,7 +1,13 @@
+init python:
+    g=Gallery()
+    g.button("dabi")
+    g.image("dabi")
+
+
 screen gallery:
     tag menu
 
-    add "black"
+    add "dabi"
 
     textbutton "return":
         action Return()
