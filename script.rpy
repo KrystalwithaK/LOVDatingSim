@@ -2,7 +2,7 @@
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
-
+define player = Character("[player]")
 define t = Character("Tomura", color="#b1f2fc")
 define d = Character("Dabi", color = "#8826f7")
 define h = Character("Himiko", color = "#e33d4e")
@@ -36,8 +36,29 @@ label start:
     $ affectionHawks = 0
     $ affectionStain = 0
 
+    default she = "she"
+    default her = "her"
+    default herself = "herself"
 
     scene bar
+
+    $player = renpy.input("What is your name?", length=32)
+
+    menu:
+        "She":
+             $she = "she"
+             $her = "her"
+             $herself = "herself"
+
+        "He":
+            $she = "he"
+            $her = "him"
+            $herself = "himself"
+
+        #"They":
+        #    $she = "they"
+        #    $her = "them"
+        #    $herself = "themselves"
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
@@ -49,6 +70,12 @@ label start:
     "The plain, wooden door squeaks loudly as Giran casually swings it open.
     Thing probably hasn’t been oiled in years. The room he leads you into is a bar. It looks far cleaner than you expected."
     "It smells kind of bad..."
+
+    g "Shigaraki, I got a new recruit for ya."
+    t "Who's [she]?"
+    g "[player], why don't you introduce yourself?"
+
+
 
     show shigaraki1:
         xalign 0.8
